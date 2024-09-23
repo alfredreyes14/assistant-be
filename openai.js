@@ -10,7 +10,7 @@ class GPT {
 
   async callGPT (content, retries = 0) {
     try {
-      const responseStream = await openai.chat.completions.create({
+      const responseStream = await this.openAI.chat.completions.create({
         model: "gpt-4o-mini",
         messages: [
           { role: "system", content: "You are a helpful assistant that will answer all questions." },
@@ -18,7 +18,7 @@ class GPT {
         ],
         stream: true,
       });
-      
+
       return responseStream
     } catch (exception) {
       if (retries > 2) {
