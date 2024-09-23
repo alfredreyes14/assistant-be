@@ -1,5 +1,4 @@
 import OpenAI from "openai";
-import { APIError } from "openai/error";
 
 class GPT {
   constructor (openAI = OpenAI) {
