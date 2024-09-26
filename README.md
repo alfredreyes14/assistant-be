@@ -20,7 +20,7 @@ npm run dev
 ## Environment Variables
 
 -  **PORT** - your specified port where the BE can be accessed.
--  **OPENAI_KEY** - your OpenAI api key. You can use your own.
+-  **OPENAI_KEY** - your OpenAI api key. You can use your own or you can use the one that I will provide.
 
 
 ## Note
